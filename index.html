@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
+    <title>Thesis2</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-menu">
+            <div data-tab-name='task' class="header-menu_item active-card">Задачи</div>
+            <div data-tab-name='doc' class="header-menu_item">Документы</div>
+            <div data-tab-name='meeting' class="header-menu_item">Совещания</div>
+            <div data-tab-name='chancellery' class="header-menu_item">Канцелярия</div>
+            <div data-tab-name='setting' class="header-menu_item">Настройки</div>
+        </div>
+        <div class="main-content">
+            <div class="card-menu">
+                <div class="task-article-menu">
+                    <div class="article-menu_item-title">Процесс</div>
+                    <div data-tab-name='task-management' class="article-menu_item sub-item active-article-menu-item">
+                        Управление задачами</div>
+                    <div class="article-menu_item-title">Карточки</div>
+                    <div data-tab-name='task-card' class="article-menu_item sub-item">Задача</div>
+                    <div data-tab-name='group-task' class="article-menu_item sub-item">Группы задач</div>
+                    <div data-tab-name='period-task' class="article-menu_item sub-item">Периодическая задача</div>
+                    <div data-tab-name='task-template' class="article-menu_item sub-item">Шаблон</div>
+                    <div data-tab-name='task-prints' class="article-menu_item">Печатные формы</div>
+                    <div data-tab-name='task-folders' class="article-menu_item">Папки</div>
+                </div>
+            </div>
+            <div class="article">
+                task management process description
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="articles/tasks/taskManagement.js"></script>
+    <script src="menus/docMenu.js"></script>
+    <script src="menus/taskMenu.js"></script>
+    <script src="articles/doc/docEndorsment.js"></script>
+    <script src="articles/doc/docCard.js"></script>
+    <script src="functions.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
