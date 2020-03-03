@@ -7,7 +7,7 @@ const docMenu = `<div class="doc-article-menu">
 <div class="article-menu_item-title">Карточки</div>
 <div data-tab-name='doc-card' class="article-menu_item sub-item">Документ</div>
 <div data-tab-name='contract-card' class="article-menu_item sub-item">Договор</div>
-<div data-tab-name='doc-template' class="article-menu_item sub-item">Шаблон</div>
+<div data-tab-name='doc-template' class="article-menu_item sub-item">Шаблоны</div>
 <div data-tab-name='doc-prints' class="article-menu_item">Печатные формы</div>
 <div data-tab-name='doc-folders' class="article-menu_item">Папки</div>
 </div>`
