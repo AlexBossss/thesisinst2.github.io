@@ -143,6 +143,7 @@ summary::-moz-list-bullet { list-style-type: none; }
 }
 .detail-content{
     margin: 1rem;
+    font-size: 16px;
 }
 
 details {
