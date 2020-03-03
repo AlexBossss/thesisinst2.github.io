@@ -6,6 +6,7 @@ const articles = new Map();
 articles.set('doc-endorsement', docEndorsment);
 articles.set('doc-card', docCard);
 articles.set('doc-template',docTemplate);
+articles.set('doc-folders', docFolders)
 
 
 const initialArticles =  new Map();

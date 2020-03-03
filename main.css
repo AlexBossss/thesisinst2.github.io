@@ -15,7 +15,7 @@ a:hover{
 ul{
     margin:0.5rem 0 0.5rem 0;
     list-style-type: circle;
-    list-style: ;
+    
 }
 ol{
     margin:0.5rem 0 0.5rem 0;
@@ -24,15 +24,18 @@ ol{
     color: rgb(221, 98, 98);
 }
 .container{
+    margin-left: 1rem;
 padding: 0  0 0 1rem;
 }
 .header-menu{
     margin: 1rem 0 1rem 0;
     display: flex;
-    cursor: pointer;
-
+    
 }
+
 .header-menu_item{
+    padding-top:4px ;
+    cursor: pointer;
     margin: 0 1rem 1rem 1rem;
 }
 .active-card{
@@ -69,6 +72,7 @@ transform: scale(1.06);
 }
 
 .article{
+    min-height: 500px;
     width: 50%;
     border: solid rgb(216, 216, 216) 1px;
     padding: 1.6rem 2rem;
@@ -145,3 +149,10 @@ details {
     overflow: hidden;
 }
 
+.folder-item {
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+.folder-item::before {
+        content: url('img/folder.png');       
+      } 
