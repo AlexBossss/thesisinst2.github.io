@@ -1,4 +1,6 @@
-const docEndorsment = ` <div class=" doc-endorsment">
+const docEndorsment = ` 
+
+
 <div class="article-menu doc-endorsement_menu">
     <div data-tab-name="doc-endorsement-initiator" class="menu_item active-item">Инициатор</div>
     <div data-tab-name="doc-endorsement-endorser" class="menu_item">Согласующий</div>
@@ -12,9 +14,7 @@ const docEndorsment = ` <div class=" doc-endorsment">
     <div class="article-description">
     Инициатор создает карточку, заполняет необходимые ему поля,
     добавляет <a href =''>вложения </a>и запускает процесс согласования, выбирая
-    участников процесса. В случае отправки карточки на доработку от
-    инициатора требуется внести изменения (изменить поле, вложение,
-    участников процесса)
+    участников процесса. 
     </div>
     <details>
     <summary class='detail-title'>
@@ -85,7 +85,8 @@ const docEndorsment = ` <div class=" doc-endorsment">
     </summary>
     <div class="detail-content">
         В случае если участником процесса карточка была отклонена, она возвращается инициатору
-        на доработку. Найти ее можно в папке <b>"Документы"</b> — <b>"Доработка"</b>. Инициатор вносит изменения в карточку и
+        на доработку. Найти ее можно в папке <b>"Документы"</b> — <b>"Доработка"</b>. Инициатор вносит изменения в карточку (изменяет поле, вложение,
+            участников процесса) и
         продолжает процесс. Время на доработку ограничено, если при запуске процесса
         у инициатора стояла длительность.
     </div>

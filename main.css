@@ -3,7 +3,11 @@ body{
     padding: 0;
     font-family: 'Open Sans';
     font-weight: normal;
+    color: #202124;
     font-size: 14px;
+}
+b{
+    color: #202124;
 }
 a{
     text-decoration: none;
@@ -75,12 +79,14 @@ transform: scale(1.06);
     min-height: 500px;
     width: 50%;
     border: solid rgb(216, 216, 216) 1px;
-    padding: 1.6rem 2rem;
+    padding: 1.6rem 2.5rem 2.5rem 2.5rem;
     border-radius: 15px;
 }
+
 .article-menu{
     display: flex; 
-    margin-bottom: 1.6rem;   
+    margin-bottom: 1.6rem; 
+   
 }
 .menu_item{
     cursor: pointer;
@@ -102,7 +108,7 @@ transform: scale(1.06);
 .article-title{
     font-size: 30px;
     margin-bottom: 1rem;
-    color: rgb(68, 68, 68);
+    color: #202124;
 }
 
 
@@ -111,12 +117,11 @@ transform: scale(1.06);
     font-size: 18px;
 }
 details{
-    padding-left: 1.5em;
-    margin-bottom: 1rem;
+    margin:0rem 1rem 1rem 1.5rem;
+
 }
 
 summary {
-  
     outline: 0;
     cursor: pointer;
     outline: 0;
@@ -137,18 +142,16 @@ summary {
 summary::-webkit-details-marker { display: none; }
 summary::-moz-list-bullet { list-style-type: none; }
 .detail-title{
-    font-weight: bold;
-    font-size: 20px;
-    color: rgb(85, 85, 85);
+    font-weight: normal;
+    font-size: 24px;
+    color: #202124;
 }
 .detail-content{
-    margin: 1rem;
+    margin: 0.3rem 0rem 2rem 1rem;
     font-size: 16px;
 }
 
-details {
-    overflow: hidden;
-}
+
 
 .folder-item {
     font-size: 18px;
