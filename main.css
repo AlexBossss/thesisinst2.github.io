@@ -13,6 +13,21 @@ a{
     text-decoration: none;
     color: rgb(0, 160, 223);
 }
+.link{
+    color: rgb(0, 160, 223);
+    cursor: pointer;
+}
+.link:hover{
+    text-decoration: underline;
+}
+.back-button{
+    padding-bottom: 1rem;
+    display: none;
+    cursor: pointer;
+}
+.visible{
+    display: block;
+}
 a:hover{
     text-decoration: underline;
 }
@@ -108,7 +123,7 @@ transform: scale(1.06);
 .article-title{
     font-size: 30px;
     margin-bottom: 1rem;
-    color: #202124;
+    color: #3888d3;
 }
 
 

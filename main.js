@@ -10,12 +10,19 @@ articles.set('doc-folders', docFolders);
 articles.set('doc-contract', docContract);
 articles.set('doc-prints', docPrints);
 articles.set('task-management', taskManagement);
-
+articles.set('task-card', taskCard);
+articles.set('task-template',taskTemplate);
+articles.set('task-group-task', taskGroupTask);
+articles.set('task-period-task', taskPeriodTask);
+articles.set('task-folders', taskFolders);
 
 const initialArticles =  new Map();
 initialArticles.set('doc',docEndorsment)
 initialArticles.set('task',taskManagement)
 
+getLinkTab();
+back();
+getLink();
 changeMenu();
 changeArticle();
 changeTab();

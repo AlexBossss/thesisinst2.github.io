@@ -1,5 +1,7 @@
 const menu = document.querySelector('.card-menu');
-const article = document.querySelector('.article');
+const article = document.querySelector('.article-insert');
+let previousArtcile;
+const backButton = document.querySelector('.back-button');
 function changeMenu(){
   
     const headerMenuItem = document.querySelectorAll('.header-menu_item');
@@ -27,6 +29,7 @@ function changeMenu(){
     })
 }
 function changeArticle() {
+    
     const articlesMenuItem = document.querySelectorAll('.article-menu_item');
     
     let articleName;
@@ -43,7 +46,9 @@ function changeArticle() {
         this.classList.add('active-article-menu-item');
         articleName = this.getAttribute('data-tab-name');
         showArticle(articleName);
+        getLink();
         changeTab();
+        getLinkTab();
     }
 
     articlesMenuItem.forEach(item =>{
@@ -78,4 +83,64 @@ function changeTab(){
 
 function initArticle(menuName){
     article.innerHTML = initialArticles.get(menuName);
+}
+
+function getLink(){
+    const links = document.querySelectorAll('.link');
+   console.log(links);
+    let linkName;
+    
+
+    function goToTheLink(){
+        linkName = this.getAttribute('data-tab-name');
+        previousArtcile = this.getAttribute('current-article');
+        console.log(linkName);
+        console.log(previousArtcile);
+        showArticleFromTheLink(linkName);
+        
+    }
+
+    function showArticleFromTheLink(name){
+        
+        article.innerHTML = articles.get(name);
+        backButton.classList.add('visible');
+        changeTab();
+    }
+
+    links.forEach(item =>{
+        item.addEventListener('click', goToTheLink);
+    });
+}
+
+function back(){
+    function returnArticle(){
+        article.innerHTML = articles.get(previousArtcile);
+        backButton.classList.remove('visible');
+        changeTab();
+        getLink();
+    }
+
+    backButton.addEventListener('click', returnArticle);
+}
+
+function getLinkTab(){
+    const linkTabs = document.querySelectorAll('.linkTab');
+    let  linkTabName;
+
+    function showArticleFromLinkTab(name){
+        article.innerHTML = articles.get(name);
+    }
+
+    function goLinkTab(){
+        linkTabName = this.getAttribute('data-tab-name');
+        showArticleFromLinkTab(linkTabName);
+        changeTab();
+        getLinkTab();
+        getLink();
+        back();
+    }
+
+    linkTabs.forEach(item => {
+        item.addEventListener('click', goLinkTab);
+    })
 }
