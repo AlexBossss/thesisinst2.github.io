@@ -1,8 +1,8 @@
 const docMenu = `<div class="doc-article-menu">
 <div class="article-menu_item-title">Процессы</div>
 <div data-tab-name='doc-endorsement' class="article-menu_item sub-item active-article-menu-item">Согласование</div>
-<div data-tab-name='doc-acquiantance' class="article-menu_item sub-item">Ознакомление</div>
-<div data-tab-name='doc-regestration' class="article-menu_item sub-item">Регистрация</div>
+<div data-tab-name='doc-awareness' class="article-menu_item sub-item">Ознакомление</div>
+<div data-tab-name='doc-registration' class="article-menu_item sub-item">Регистрация</div>
 <div data-tab-name='doc-resolution' class="article-menu_item sub-item">Резолюция</div>
 <div class="article-menu_item-title">Карточки</div>
 <div data-tab-name='doc-card' class="article-menu_item sub-item">Документ</div>
