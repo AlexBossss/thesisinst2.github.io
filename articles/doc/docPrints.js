@@ -25,7 +25,7 @@ const docPrints =`
 
 <details>
 <summary class='detail-title'>
-    Печать коверта
+    Печать конверта
 </summary>
 <div class="detail-content">
     Вы можете напечатать конверт для  <b>исходящий </b> документов и
